@@ -15,5 +15,6 @@ node_modules
 
 npm-debug.log
 
+.idea
 *.iml
 configurations.js
