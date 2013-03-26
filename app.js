@@ -40,8 +40,8 @@ app.get('/', routes.index)
 var devicesService = require('./lib/ws/DevicesService.js')
 var messagesService = require('./lib/ws/MessagesService.js')
 
-app.namespace('/device', devicesService(app))
-app.namespace('/message', messagesService(app))
+app.namespace('/devices', devicesService(app))
+app.namespace('/messages', messagesService(app))
 
 app.listen(app.get('port'), function(){
   console.log("Express server listening on port " + app.get('port'))
